@@ -25,3 +25,6 @@ dist-ssr
 
 # API folder
 API
+
+# VSCode config
+.vscode
