@@ -5,7 +5,7 @@ import logoGithub from '../assets/github-logo.svg'
 
 export function Footer() {
   return (
-    <footer className='flex h-[10vh] items-center justify-around bg-gray-500 px-1'>
+    <footer className='mx-auto flex h-[10vh] max-w-7xl items-center justify-around bg-gray-500 px-1'>
       <div className='text-center'>
         <p className='mb-1 font-light text-white'>Technologies used</p>
         <div className='flex items-center justify-evenly'>
