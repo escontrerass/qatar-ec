@@ -17,17 +17,14 @@ export function MenuMobile() {
             <Link to='/' onClick={handleMenu}>
               <li className='hover:text-rose-700'>Home</li>
             </Link>
-            <Link to='groups' onClick={handleMenu}>
+            <Link to='/groups' onClick={handleMenu}>
               <li className='hover:text-rose-700'>Groups</li>
             </Link>
-            <Link to='positions' onClick={handleMenu}>
+            <Link to='/positions' onClick={handleMenu}>
               <li className='hover:text-rose-700'>Positions</li>
             </Link>
-            <Link to='stadiums' onClick={handleMenu}>
-              <li className='hover:text-rose-700'>Stadiums</li>
-            </Link>
-            <Link to='qatar' onClick={handleMenu}>
-              <li className='hover:text-rose-700'>Qatar</li>
+            <Link to='/matches' onClick={handleMenu}>
+              <li className='hover:text-rose-700'>Partidos</li>
             </Link>
           </ul>
         </div>
