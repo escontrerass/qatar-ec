@@ -17,3 +17,11 @@ body {
   width: 100%;
   background-color: rgb(82, 30, 30);
 }
+
+table {
+  width: 100%;
+}
+
+.rc-table-thead {
+  color: white;
+}

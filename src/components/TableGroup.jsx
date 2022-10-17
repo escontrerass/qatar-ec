@@ -1,38 +1,75 @@
 import React from 'react'
-import { createColumnHelper, useReactTable } from '@tanstack/react-table'
-import { TeamTableGroup } from './TeamTableGroup'
-
-const columnHelper = createColumnHelper()
+import Table from 'rc-table'
 
 const columns = [
-  columnHelper.accessor('team_id', {
-    cell: info => info.getValue(),
-    footer: info => info.column.id,
-  }),
+  {
+    title: '#',
+    dataIndex: 'team_id',
+    key: 'team_id',
+    align: 'center',
+  },
+  {
+    title: 'Name',
+    dataIndex: 'name_en',
+    key: 'name_en',
+    align: 'center',
+  },
+  {
+    title: 'W',
+    dataIndex: 'w',
+    key: 'w',
+    align: 'center',
+  },
+  {
+    title: 'MP',
+    dataIndex: 'mp',
+    key: 'mp',
+    align: 'center',
+  },
+  {
+    title: 'L',
+    dataIndex: 'l',
+    key: 'l',
+    align: 'center',
+  },
+  {
+    title: 'GF',
+    dataIndex: 'gf',
+    key: 'gf',
+    align: 'center',
+  },
+  {
+    title: 'GA',
+    dataIndex: 'ga',
+    key: 'ga',
+    align: 'center',
+  },
+  {
+    title: 'GD',
+    dataIndex: 'gd',
+    key: 'gd',
+    align: 'center',
+  },
+  {
+    title: 'PTS',
+    dataIndex: 'pts',
+    key: 'pts',
+    align: 'center',
+  },
 ]
 
 export function TableGroup(props) {
   const { group, teams } = props
 
-  console.log(teams)
-
   return (
-    <div className='min-w-[350px]'>
-      <h2>{`Group ${group}`}</h2>
-      {/* <div className='flex justify-between'>
-        <p>#</p>
-        <p>Flag</p>
-        <p>Team</p>
-        <p>P</p>
-        <p>W</p>
-        <p>L</p>
-        <p>MP</p>
-        <p>GF</p>
-        <p>GA</p>
-        <p>GD</p>
-        <p>PTS</p>
-      </div>
-      <TeamTableGroup {...teams[0]} /> */}
+    <div className='flex min-w-[350px] flex-col gap-5 rounded-xl border-8 bg-rose-800 py-4 px-2 font-qatar'>
+      <h2 className='text-center text-4xl text-white'>{`Group ${group}`}</h2>
+      <Table
+        columns={columns}
+        data={teams}
+        rowClassName='text-rose-800 bg-white'
+        className='overflow-hidden rounded-lg border'
+      />
     </div>
   )
 }
