@@ -24,7 +24,7 @@ export function MenuMobile() {
               <li className='hover:text-rose-700'>Positions</li>
             </Link>
             <Link to='/matches' onClick={handleMenu}>
-              <li className='hover:text-rose-700'>Partidos</li>
+              <li className='hover:text-rose-700'>Matches</li>
             </Link>
           </ul>
         </div>
