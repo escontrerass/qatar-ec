@@ -11,10 +11,14 @@ export function Header() {
     setMenu(!menu)
   }
 
+  const handleLogo = () => {
+    setMenu(false)
+  }
+
   return (
     <header className='mx-auto flex h-[10vh] max-w-7xl items-center justify-between bg-gray-500 px-4'>
       <picture className='w-44'>
-        <Link to='/'>
+        <Link to='/' onClick={handleLogo}>
           <img src={titleQatar} alt='Fifa world cup Qatar 2022 title' title='Fifa world cup Qatar 2022 title' />
         </Link>
       </picture>
