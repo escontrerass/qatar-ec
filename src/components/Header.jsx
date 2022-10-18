@@ -1,8 +1,9 @@
 import { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import { menuContext } from '@/context/menuContext'
 import titleQatar from '@/assets/home-title.png'
 import iconMenu from '@/assets/menu-icon.png'
-import { Link } from 'react-router-dom'
 
 export function Header() {
   const { menu, setMenu } = useContext(menuContext)

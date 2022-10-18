@@ -5,18 +5,18 @@ import logoGithub from '../assets/github-logo.svg'
 
 export function Footer() {
   return (
-    <footer className='mx-auto flex h-[10vh] max-w-7xl items-center justify-around bg-gray-500 px-1'>
+    <footer className='flex h-[10vh] max-w-7xl items-center justify-around bg-gray-500 px-1'>
       <div className='text-center'>
         <p className='mb-1 font-light text-white'>Technologies used</p>
         <div className='flex items-center justify-evenly'>
           <a href='https://vitejs.dev/' target='_blank' rel='noopener noreferrer' title='Vite logo'>
-            <img src={logoVite} alt='Vite logo' className='mx-auto w-7' />
+            <img src={logoVite} alt='Vite logo' className='w-7' />
           </a>
           <a href='https://es.reactjs.org/' target='_blank' rel='noopener noreferrer' title='React logo'>
-            <img src={logoReact} alt='React logo' className='mx-auto w-7' />
+            <img src={logoReact} alt='React logo' className='w-7' />
           </a>
           <a href='https://tailwindcss.com/' target='_blank' rel='noopener noreferrer' title='Tailwind logo'>
-            <img src={logoTailwind} alt='Tailwind logo' className='mx-auto w-7' />
+            <img src={logoTailwind} alt='Tailwind logo' className=' w-7' />
           </a>
         </div>
       </div>

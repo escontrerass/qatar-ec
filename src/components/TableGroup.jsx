@@ -5,55 +5,46 @@ const columns = [
   {
     title: '#',
     dataIndex: 'team_id',
-    key: 'team_id',
     align: 'center',
   },
   {
     title: 'Name',
     dataIndex: 'name_en',
-    key: 'name_en',
     align: 'center',
   },
   {
     title: 'W',
     dataIndex: 'w',
-    key: 'w',
     align: 'center',
   },
   {
     title: 'MP',
     dataIndex: 'mp',
-    key: 'mp',
     align: 'center',
   },
   {
     title: 'L',
     dataIndex: 'l',
-    key: 'l',
     align: 'center',
   },
   {
     title: 'GF',
     dataIndex: 'gf',
-    key: 'gf',
     align: 'center',
   },
   {
     title: 'GA',
     dataIndex: 'ga',
-    key: 'ga',
     align: 'center',
   },
   {
     title: 'GD',
     dataIndex: 'gd',
-    key: 'gd',
     align: 'center',
   },
   {
     title: 'PTS',
     dataIndex: 'pts',
-    key: 'pts',
     align: 'center',
   },
 ]
@@ -69,6 +60,7 @@ export function TableGroup(props) {
         data={teams}
         rowClassName='text-rose-800 bg-white'
         className='overflow-hidden rounded-lg border'
+        rowKey={record => record.team_id}
       />
     </div>
   )
