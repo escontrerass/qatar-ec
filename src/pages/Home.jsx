@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { Layout } from '@/template/Layout'
 import { Counter } from '@/components/Counter'
 import titleFifa from '@/assets/fifa-title.svg'
