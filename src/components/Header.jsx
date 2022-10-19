@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { menuContext } from '@/context/menuContext'
 import titleQatar from '@/assets/home-title.png'
 import iconMenu from '@/assets/menu-icon.png'
@@ -31,17 +30,14 @@ export function Header() {
           <Link to='/'>
             <li className='hover:text-rose-700'>Home</li>
           </Link>
-          <Link to='groups'>
+          <Link to='/groups'>
             <li className='hover:text-rose-700'>Groups</li>
           </Link>
-          <Link to='positions'>
+          <Link to='/positions'>
             <li className='hover:text-rose-700'>Positions</li>
           </Link>
-          <Link to='stadiums'>
-            <li className='hover:text-rose-700'>Stadiums</li>
-          </Link>
-          <Link to='qatar'>
-            <li className='hover:text-rose-700'>Qatar</li>
+          <Link to='/matches'>
+            <li className='hover:text-rose-700'>Matches</li>
           </Link>
         </ul>
       </nav>

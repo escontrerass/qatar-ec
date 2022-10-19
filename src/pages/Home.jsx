@@ -16,12 +16,7 @@ export function Home() {
           />
         </picture>
         <picture className='w-40 md:w-80'>
-          <img
-            src={petQatar}
-            alt='Fifa world cup qatar 2022 pet'
-            title='Fifa world cup qatar 2022 pet'
-            className='h-full w-full'
-          />
+          <img src={petQatar} alt='Fifa world cup qatar 2022 pet' title='Fifa world cup qatar 2022 pet' />
         </picture>
         <Counter />
       </section>
